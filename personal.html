@@ -9,12 +9,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
 </head>
 <body>
-    <h1>Hello!</h1>
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="li1"><a href="#home" class="nav1">Home</a></li>
+                <li class="li2"><a href="#about" class="nav2">About Me</a></li>
+                <li class="li3"><a href="#projects" class="nav3">Projects</a></li>
+                <li class="li4"><a href="#contact" class="nav4">Contact Info</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <h1 class="title" id="home">Hello!</h1>
     <p class="intro">I'm Jason, a college student studying computer science at the University of Maryland, College Park.</p>
     <p class="intro">I'm interested in everything technology, from web development, software development, and cybersecurity to artificial intelligence and machine learning.</p>
-    <h2 class="intro" style="padding-top: 50px;">About me</h2>
+    <h2 class="intro" id="about" style="padding-top: 50px;">About me</h2>
 
     <p class="hobbiestxt">I like working out, playing badminton, running, and playing video games. I also like listening to <a href="music.html">music</a> and watching shows and movies.</p>
-    <p class="hobbiestxt">I also like coding and learning new things. My resume is <a href="Jason_Yih_Resume_25.pdf">here.</a></p>
+    <p class="hobbiestxt">I also like coding and learning new things. My resume is <a href="#" id="openResumeLink">here.</a></p>
+    
+    <div id="resumeOverlay">
+        <div id="resumeContainer">
+            <object data="/Users/jason/AppDev/HTML/MyWebsite/Jason_Yih_Resume_25.pdf" type="application/pdf" width="100%" height="650">
+                PDF unable to be opened. <a href="/Users/jason/AppDev/HTML/MyWebsite/Jason_Yih_Resume_25.pdf">Download PDF</a> instead.
+            </object>
+            <button id="closeResumeButton">Close</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+
+    <p class="hobbiestxt">Here is my LinkedIn page as well.</p>
+    <button id="linkedin">
+        <a href="https://www.linkedin.com/in/jason-yih">My LinkedIn Page</a>
+     </button>
+
+     <h2 class="intro" id="projects" style="padding-top: 50px;">Projects</h2>
+
 </body>
 </html>
